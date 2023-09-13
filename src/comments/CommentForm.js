@@ -3,9 +3,6 @@ import send from "../image/send.svg";
 
 const CommentForm = ({
   handleSubmit,
-  submitLabel,
-  hasCancelButton = false,
-  handleCancel,
   initialText = "",
 }) => {
   const [text, setText] = useState(initialText);
@@ -28,15 +25,6 @@ const CommentForm = ({
           <img src={send} />
         </button>
       </div>
-      {hasCancelButton && (
-        <button
-          type="button"
-          className="comment-form-button comment-form-cancel-button"
-          onClick={handleCancel}
-        >
-          Cancel
-        </button>
-      )}
     </form>
   );
 };

@@ -23,11 +23,8 @@ const Comment = ({
 
   const handleLike = () => {
     // Toggle likeCount between 0 and 1
-
-    console.log("Before setLikeCount:", likeCount);
     const newLike = likeCount == 0 ? 1 : 0;
     setLikeCount(newLike);
-    console.log("after setLikeCount:", likeCount);
   };
   // if "const canReply = Boolean(currentUserId); then User can reply to all comments including users own comment
 
