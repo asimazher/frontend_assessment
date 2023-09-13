@@ -30,6 +30,7 @@ const Comments = ({ commentsUrl, currentUserId }) => {
     });
   };
 
+  
   const deleteComment = (commentId) => {
       deleteCommentApi().then(() => {
         const updatedBackendComments = backendComments.filter(

@@ -7,6 +7,7 @@ export const getComments = async () => {
         userId: "1",
         imgsrc:"user1",
         parentId: null,
+        like:"1",
         createdAt: "2023-09-05T23:00:33.010+02:00",
       },
       {
@@ -16,6 +17,7 @@ export const getComments = async () => {
         userId: "2",
         imgsrc:"user2",
         parentId: null,
+        like:"1",
         createdAt: "2023-09-05T23:00:33.010+02:00",
       },
       {
@@ -25,17 +27,9 @@ export const getComments = async () => {
         userId: "3",
         imgsrc:"user3",
         parentId: null,
+        like:"0",
         createdAt: "2023-09-05T23:00:33.010+02:00",
-      },
-      {
-        id: "4",
-        body: "Old rivalry! Consider me in ;-)",
-        username: "John Doe",
-        userId: "4",
-        imgsrc:"user4",
-        parentId: "2",
-        createdAt: "2023-09-05T23:00:33.010+02:00",
-      },
+      }
     ];
   };
   
@@ -47,6 +41,7 @@ export const getComments = async () => {
       userId: "4",
       imgsrc:"user4",
       parentId,
+      like:"0",
       createdAt: new Date().toISOString(),
     };
   };
